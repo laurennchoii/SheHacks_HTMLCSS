@@ -1,0 +1,22 @@
+.img {
+  background-position: center;
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+.longspan
+{
+  width: 10%;
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

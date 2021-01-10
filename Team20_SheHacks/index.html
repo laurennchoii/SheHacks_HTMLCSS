@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>Restaurant Rate-atouille</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-blue-grey">
+    <div class="w3-col s3">
+      <a href="#home" class="w3-button w3-block w3-blue-grey">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-block w3-button w3-blue-grey">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#reviews" class="w3-button w3-block w3-blue-grey">REVIEWS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#suggestions" class="w3-button w3-block w3-blue-grey">SUGGESTIONS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <img class="longspan" src="restaurant.jpg" width = 100%>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:80px">Restaurant<br> Rate-atouille</span>
+  </div>
+</header>
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+    <p> Welcome to Restaurant Rate-atouille! We rate and review restaurants to make it easier for you to decide where to eat. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>Our Team: Jocelyn Xu, Lauren Choi, Nishckria Nataraja Babu, Sharanya Srirangam</p>
+      <img src="remyRat.png" alt="Remy">
+    </div>
+  </div> 
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="reviews">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RESTAURANT REVIEWS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Breakfast or Break Slow');" id="myLink">
+        <div class="w3-col s6 tablink">Breakfast or Break Slow</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dumpling Dash');">
+        <div class="w3-col s6 tablink">Dumpling Dash</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pastabilities');" id="myLink">
+        <div class="w3-col s6 tablink">Pasta-bilities</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'RaspberryPi');" id="myLink">
+        <div class="w3-col s6 tablink">RaspberryPi</div>
+      </a>
+        
+    </div>
+
+    <div id="Breakfast or Break Slow" class="w3-container menu w3-padding-48 w3-card">
+        <img src="breakfastOrBreakSlow.jpg" alt="Breakfast or Break Slow" width="500" height="333">
+      <h5>Restaurant Interior</h5>
+      <p class="w3-text-grey">Excellent interior design! I felt very cozy and warm as soon as I entered the restaurant! Simply beautiful!</p><br>
+    
+      <h5>Services</h5>
+      <p class="w3-text-grey">Very kind waiters and efficient service. Overall a surprisingly pleasant experience.</p><br>
+
+      <h5>Dishes</h5>
+      <p class="w3-text-grey">SOOO yummy! </p><br>
+    
+      <h5>Overall Rating</h5>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+
+    <div id="Dumpling Dash" class="w3-container menu w3-padding-48 w3-card">
+        <img src="dumplingDash.jpg" alt="Dumpling Dash" width="500" height="333">
+      <h5>Restaurant Interior</h5>
+      <p class="w3-text-grey">Creative interior design! </p><br>
+    
+      <h5>Services</h5>
+      <p class="w3-text-grey">Staff were all chatting with each other instead of working. Conversations were fun to listen to though. </p><br>
+
+      <h5>Dishes</h5>
+      <p class="w3-text-grey">I would have dined and dashed if I could!</p><br>
+    
+      <h5>Overall Rating</h5>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>  
+  
+   <div id="Pastabilities" class="w3-container menu w3-padding-48 w3-card">
+       <img src="pastabilities.jpg" alt="Pastabilities" width="500" height="333">
+      <h5>Restaurant Interior</h5>
+      <p class="w3-text-grey"> Average interior, but excellent music choice. </p><br>
+    
+      <h5>Services</h5>
+      <p class="w3-text-grey">Super friendly staff! Great packaging too. </p><br>
+
+      <h5>Dishes</h5>
+      <p class="w3-text-grey">Truly boasted their cooking pasta-bilities! </p><br>
+    
+      <h5>Overall Rating</h5>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+  
+  </div>
+  <div id="RaspberryPi" class="w3-container menu w3-padding-48 w3-card">
+       <img src="raspberryPi.jpg" alt="RaspberryPi" width="500" height="333" class = "center">
+      <h5>Restaurant Interior</h5>
+      <p class="w3-text-grey"> Clean interior, pretty small but more takeout style. Lots of computer-themed decor. </p><br>
+    
+      <h5>Services</h5>
+      <p class="w3-text-grey">Staff was very helpful and gave good recommendations of treats to try. </p><br>
+
+      <h5>Dishes</h5>
+      <p class="w3-text-grey">Not too sweet and lots of fresh fruit in the dessert. Would come again for pie! </p><br>
+    
+      <h5>Overall Rating</h5>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="suggestions" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">SUGGESTIONS</span></h5>
+    <p>Let us know if there's a restaurant you'd like us to review!</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Suggestions" required name="Suggestions"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND</button></p>
+    </form>
+  </div>
+</div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
